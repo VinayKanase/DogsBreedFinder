@@ -6,7 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Dogs,Dogs Breeds,Information About Dogs" />
+    <meta
+      name="keywords"
+      content="Dogs,Dogs Breeds,Information About Dogs,Images of Dogs by Breeds"
+    />
     <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="apple-touch-icon" href="./images/Logo.png" />
@@ -28,19 +31,19 @@
       </nav>
     </header>
     <section>
-      <div class="main-container">
-        <div class="background-filter"></div>
-        <div class="attr-heading">
-          <!-- Dogs do speak, but only to those who know how to listen -->
-          <h2>Find more than 150+ breeds and their information</h2>
+      <div class="container">
+        <div class="input">
+          <input type="search" placeholder="Search Images by Breed Name" />
+          <ul id="breed-suggestions"></ul>
         </div>
-        <input
-          id="search"
-          class="search"
-          type="search"
-          placeholder="Search Breeds"
-        />
+        <select id="imagetype-opt">
+          <option value="">Image Type</option>
+          <option value="jpg">jpg</option>
+          <option value="png">png</option>
+          <option value="gif">gif</option>
+        </select>
       </div>
+      <div class="images-cont"></div>
     </section>
     <footer>
       <div class="footer-container">

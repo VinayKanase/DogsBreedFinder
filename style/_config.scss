@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 $primary-color: #FBDCA3;
-$primary-color3: #F3AD55;
+$primary-color2: #F3AD55;
 $secondary-color: #624CE0;
 $text-color: white;
 * {
@@ -14,4 +14,13 @@ ul{
 a{
  color: white;
  text-decoration: none;
+}
+::placeholder{
+ text-transform: capitalize;
+ color: #8d7373;
+ font-size: 1.8rem;
+}
+input{
+ border: none;
+ outline: none;
 }
