@@ -1,0 +1,26 @@
+@import './config';
+html{
+  font-size: 62.5%;
+ }
+ body{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+ }
+ header{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 80px;
+   background: $secondary-color;
+ }
+ .navbar{
+   position: relative;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 20px;
+ }
