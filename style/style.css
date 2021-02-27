@@ -51,7 +51,7 @@ input::-webkit-inner-spin-button {
 }
 
 section {
-  height: 82vh;
+  height: 480px;
 }
 
 .main-container {
@@ -125,7 +125,6 @@ section {
   }
   .btn-search {
     width: 160px;
-    padding: 8px 18px;
     top: -80px;
   }
 }
@@ -795,7 +794,7 @@ footer {
     padding: 25px 15px;
   }
   section {
-    height: 84vh;
+    height: 500px;
   }
 }
 
