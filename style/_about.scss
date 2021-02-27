@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+.position{
+ position: relative;
+ top: 40px;
+ left: 20px;
+}
+.para{
+ position: absolute;
+ top: 100px;
+ left: 20px;
+ margin: 0 50px;
+ font-size: 3.4rem;
+ font-family: "Montserrat Alternates", sans-serif;
+ font-weight: 500;
+ color: black;
+ a{
+  color: rgba($color: #222020, $alpha: 0.8);
+ }a:hover{
+  color: rgba($color: #000000, $alpha: 1);
+ }
+}

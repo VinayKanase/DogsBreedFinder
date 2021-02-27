@@ -41,3 +41,14 @@ section{
  height: 100%;
  backdrop-filter: blur(2px) hue-rotate(25deg);
 }
+.btn-search{
+  position: relative;
+  top: -60px;
+  left: 20px;
+  width: 180px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 15px;
+  background: $secondary-color;
+  padding: 10px 20px;
+}

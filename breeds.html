@@ -23,42 +23,23 @@
         </div>
         <ul class="navlinks">
           <li><a href="./">Home</a></li>
-          <li class="active"><a href="./images.html">Images</a></li>
-          <li><a href="./breeds.html">Breeds</a></li>
+          <li><a href="./images.html">Images</a></li>
+          <li class="active"><a href="./breeds.html">Breeds</a></li>
           <li><a href="./aboutme.html">About Me</a></li>
         </ul>
         <div id="hamburger" class="hamburger"></div>
       </nav>
     </header>
-    <section id="section">
-      <div class="container">
-        <div class="input">
-          <div class="input-main">
-            <input
-              class="search-breedimage"
-              id="breedname-reqimage"
-              type="search"
-              placeholder="Search Images by Breed Name"
-            />
-            <ul class="suggestions" id="breed-suggestions"></ul>
-          </div>
-          <label for="imagetype-opt" class="dropdown-icon">
-            <i class="gg-arrow-down-o"></i>
-          </label>
-          <select class="select-opt" id="imagetype-opt">
-            <option value="">Image Type(optional)</option>
-            <option value="jpg">jpg</option>
-            <option value="png">png</option>
-            <option value="gif">gif</option>
-          </select>
+    <section id="sectionBreeds">
+      <div class="main-bg">
+        <div class="search-inputs">
+          <input class="search-breed" type="search" placeholder="Find Breeds" />
+        </div>
+        <div class="suggestions-oneline">
+          <ul id="suggestions-name"></ul>
         </div>
       </div>
-      <div class="images-cont">
-        <div class="heading">
-          <h2>Images</h2>
-        </div>
-        <div class="images-flex">
-          <div id="imageBox" class="img-box"></div>
+      <div class="cards-container">
         </div>
       </div>
     </section>
@@ -76,5 +57,17 @@
       </div>
     </footer>
     <script src="./app.js"></script>
+    <script type="text/javascript" src="tilt.js"></script> 
+    <script>
+      var interval = setInterval(()=>{
+       if(completed){
+        clearInterval(interval);
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		     max: 25,
+		     speed: 400
+	      });
+      }
+      },200);
+    </script>
   </body>
 </html>
