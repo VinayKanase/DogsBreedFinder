@@ -131,8 +131,35 @@ section {
 }
 
 @media screen and (max-width: 560px) {
+  .attr-heading {
+    width: 60%;
+  }
   .attr-heading h2 {
     font-size: 3.6rem;
+  }
+  .main-container {
+    background-size: 100% 85vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+  .attr-heading {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .attr-heading {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
   }
 }
 
