@@ -131,14 +131,15 @@ section {
 }
 
 @media screen and (max-width: 560px) {
+  .main-container {
+    background: url("../images/dog-bg-med.jpg");
+    background-size: 100% 90vh;
+  }
   .attr-heading {
     width: 60%;
   }
   .attr-heading h2 {
     font-size: 3.6rem;
-  }
-  .main-container {
-    background-size: 100% 90vh;
   }
   section {
     min-height: 100vh;
@@ -146,6 +147,10 @@ section {
 }
 
 @media screen and (max-width: 480px) {
+  .main-container {
+    background: url("../images/dog-bg-sm.jpg");
+    background-size: 100% 90vh;
+  }
   .attr-heading {
     width: 80%;
   }
