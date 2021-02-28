@@ -111,6 +111,7 @@ section {
   position: relative;
   top: -60px;
   left: 20px;
+  margin-top: 20px;
   width: 180px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -137,7 +138,7 @@ section {
     font-size: 3.6rem;
   }
   .main-container {
-    background-size: 100% 85vh;
+    background-size: 100% 500px;
   }
 }
 
