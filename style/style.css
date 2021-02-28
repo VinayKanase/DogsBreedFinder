@@ -140,26 +140,17 @@ section {
   .main-container {
     background-size: 100% 500px;
   }
+  section {
+    min-height: 100vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  html {
-    font-size: 50%;
-  }
   .attr-heading {
     width: 80%;
   }
-}
-
-@media screen and (max-width: 480px) {
   .attr-heading {
     width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  html {
-    font-size: 40%;
   }
 }
 
@@ -714,9 +705,7 @@ section {
   top: 54px;
   left: 0;
   width: 100%;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
+  min-height: auto;
 }
 
 footer {
@@ -801,7 +790,7 @@ footer {
 
 @media screen and (max-width: 750px) {
   header {
-    height: 100vh;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -815,6 +804,7 @@ footer {
     transition: all 0.5s;
   }
   header.on {
+    height: 100vh;
     z-index: 100;
   }
   .navbar {
@@ -874,6 +864,18 @@ footer {
   .navlinks li {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 45%;
   }
 }
 

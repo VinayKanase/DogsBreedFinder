@@ -74,22 +74,15 @@ section{
   .main-container{
     background-size: 100% 500px;
   }
+  section{
+   min-height: 100vh;
+  }
 }
 @media screen and (max-width: 480px){
-  html{
-    font-size: 50%;
-  }
   .attr-heading{
     width: 80%;
   }
-}
-@media screen and (max-width: 480px){
   .attr-heading{
     width: 90%;
-  }
-}
-@media screen and (max-width: 480px){
-  html{
-    font-size: 40%;
   }
 }

@@ -52,7 +52,7 @@ html{
    top: 54px;
    left: 0;
    width: 100%;
-   min-height: fit-content;
+   min-height: auto;
  }
  footer{
    position: fixed;
@@ -118,13 +118,14 @@ html{
  }
  @media screen and (max-width: 750px){
    header{
-    height: 100vh;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.5s;
    }
    header.on{
+    height: 100vh;
       z-index: 100;
    }
    .navbar{
@@ -177,8 +178,17 @@ html{
      }
    }
  }
-
-
+ @media screen and (max-width: 480px){
+  html{
+    font-size: 52%;
+  }
+}
+@media screen and (max-width: 420px){
+  html{
+    font-size: 45%;
+  }
+}
+//Animations
  @keyframes transisin{
    from{
      transform: translateX(100%);
