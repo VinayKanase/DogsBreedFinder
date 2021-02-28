@@ -138,7 +138,7 @@ section {
     font-size: 3.6rem;
   }
   .main-container {
-    background-size: 100% 500px;
+    background-size: 100% 90vh;
   }
   section {
     min-height: 100vh;
@@ -784,7 +784,7 @@ footer {
     padding: 25px 15px;
   }
   section {
-    height: 500px;
+    height: 90vh;
   }
 }
 
