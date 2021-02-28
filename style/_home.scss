@@ -66,7 +66,7 @@ section{
 }
 @media screen and (max-width: 560px){
   .main-container{
-    background: url('../images/dog-bg-med.jpg');
+    background: url('../images/dog-bg-med.jpg') no-repeat center center;
     background-size: 100% 90vh;
   }
   .attr-heading{
@@ -81,7 +81,7 @@ section{
 }
 @media screen and (max-width: 480px){
   .main-container{
-    background: url('../images/dog-bg-sm.jpg');
+    background: url('../images/dog-bg-sm.jpg') no-repeat center center;
     background-size: 100% 90vh;
   }
   .attr-heading{

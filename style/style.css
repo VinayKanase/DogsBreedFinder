@@ -132,7 +132,7 @@ section {
 
 @media screen and (max-width: 560px) {
   .main-container {
-    background: url("../images/dog-bg-med.jpg");
+    background: url("../images/dog-bg-med.jpg") no-repeat center center;
     background-size: 100% 90vh;
   }
   .attr-heading {
@@ -148,7 +148,7 @@ section {
 
 @media screen and (max-width: 480px) {
   .main-container {
-    background: url("../images/dog-bg-sm.jpg");
+    background: url("../images/dog-bg-sm.jpg") no-repeat center center;
     background-size: 100% 90vh;
   }
   .attr-heading {
@@ -441,6 +441,111 @@ select {
   position: absolute;
   top: 56px;
   left: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .select-opt {
+    width: 45%;
+    right: 40px;
+  }
+  .dropdown-icon {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .input-main .search-breedimage {
+    width: 85%;
+  }
+  .select-opt {
+    width: 45%;
+    right: 30px;
+  }
+  .dropdown-icon {
+    right: 30px;
+    width: 46px;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .input-main .search-breedimage {
+    width: 85%;
+  }
+  .select-opt {
+    width: 5%;
+    right: 30px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .dropdown-icon {
+    right: 30px;
+    width: 46px;
+  }
+  .select-opt:hover {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .select-opt:hover {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .input-main .search-breedimage {
+    width: 80%;
+  }
+  .input-main ::-webkit-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .input-main :-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .input-main ::-ms-input-placeholder {
+    font-size: 1.6rem;
+  }
+  .input-main ::placeholder {
+    font-size: 1.6rem;
+  }
+  .select-opt:hover {
+    width: 65%;
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .select-opt:hover {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .input-main .search-breedimage {
+    width: 75%;
+  }
+  .select-opt:hover {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .input-main .search-breedimage {
+    width: 70%;
+  }
+  .select-opt:hover {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .input-main .search-breedimage {
+    width: 65%;
+    padding: 5px 15px;
+  }
+  .select-opt:hover {
+    width: 90%;
+  }
 }
 
 section {
@@ -880,7 +985,7 @@ footer {
 
 @media screen and (max-width: 420px) {
   html {
-    font-size: 45%;
+    font-size: 48%;
   }
 }
 
