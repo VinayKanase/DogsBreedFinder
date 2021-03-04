@@ -562,6 +562,9 @@ select {
     top: 102px;
     right: 5%;
   }
+  .suggestions {
+    z-index: 25;
+  }
 }
 
 section {
@@ -735,6 +738,7 @@ section {
         -ms-flex-direction: column;
             flex-direction: column;
     left: -20px;
+    top: -450px;
   }
   .card {
     width: 85%;
@@ -1018,7 +1022,7 @@ footer {
 
 @media screen and (max-width: 420px) {
   html {
-    font-size: 48%;
+    font-size: 50%;
   }
 }
 
