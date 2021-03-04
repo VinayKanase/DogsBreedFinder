@@ -28,3 +28,8 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
  display: none;
 }
+::selection{
+ background: black;
+ color: white;
+ opacity: 0.9;
+}

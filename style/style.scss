@@ -143,6 +143,7 @@ html{
     width: 26px;
     height: 4px; 
     background: white;
+    transition: all 0.1s;
     cursor: pointer;
     &::before{
       content: '';
@@ -159,6 +160,18 @@ html{
       width: 26px;
       height: 4px; 
       background: white;
+    }
+   }
+   .hamburger.toggle{
+    width: 26px;
+    height: 4px; 
+    background: white;
+    transform: rotate(45deg) translate(5px,6px);
+    &::before{
+      opacity: 0;
+    }
+    &::after{
+      transform: rotate(-90deg) translate(14px, 0px);
     }
    }
    .main-name h1{

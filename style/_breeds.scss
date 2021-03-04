@@ -116,8 +116,12 @@ section{
   font-weight: bold;
   font-size: 1.5rem;
 }
-::selection{
-  background: black;
-  color: white;
-  opacity: 0.9;
+@media screen and (max-width:500px){
+  .cards-container{
+    flex-direction: column;
+    left: -20px;
+  }
+  .card{
+    width: 85%;
+  }
 }

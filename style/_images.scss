@@ -223,24 +223,18 @@ select{
    width: 85%;
   }
  }
- .select-opt{
-  width: 45%;
-  right: 30px;
- }
  .dropdown-icon{
   right: 30px;
   width: 46px;
  }
-}
-@media screen and (max-width:728px){
  .input-main{
   .search-breedimage{
    width: 85%;
   }
  }
  .select-opt{
-  width: 5%;
-  right: 30px;
+  width: 35px;
+  padding: 0 8px;
   transition: all 0.5s;
  }
  .dropdown-icon{
@@ -259,7 +253,7 @@ select{
 @media screen and (max-width:599px){
  .input-main{
   .search-breedimage{
-   width: 80%;
+   width: 75%;
   }
   ::placeholder{
    font-size: 1.6rem;
@@ -278,31 +272,37 @@ select{
 @media screen and (max-width:515px){
  .input-main{
   .search-breedimage{
-   width: 75%;
+   width: 70%;
   }
  }
  .select-opt:hover{
   width: 75%;
  }
-}
-@media screen and (max-width:430px){
- .input-main{
-  .search-breedimage{
-   width: 70%;
-  }
- }
- .select-opt:hover{
-  width: 80%;
- }
-}
-@media screen and (max-width:390px){
- .input-main{
-  .search-breedimage{
-   width: 65%;
-   padding: 5px 15px;
-  }
- }
- .select-opt:hover{
+ .img-box{
   width: 90%;
  }
 }
+@media screen and (max-width:430px){
+ .input{
+  flex-direction: column;
+ }
+ .input-main{
+  top: 30px;
+  .search-breedimage{
+   width: 90%;
+  }
+ }
+ .select-opt{
+  left: 0px;
+  width: 90%;
+  &:hover{
+   width: 90%;
+   font-size: 1.8rem;
+  }
+ }
+ .dropdown-icon{
+  top: 102px;
+  right: 5%;
+ }
+}
+

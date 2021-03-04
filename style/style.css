@@ -50,6 +50,18 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
+::-moz-selection {
+  background: black;
+  color: white;
+  opacity: 0.9;
+}
+
+::selection {
+  background: black;
+  color: white;
+  opacity: 0.9;
+}
+
 section {
   height: 480px;
 }
@@ -457,23 +469,16 @@ select {
   .input-main .search-breedimage {
     width: 85%;
   }
-  .select-opt {
-    width: 45%;
-    right: 30px;
-  }
   .dropdown-icon {
     right: 30px;
     width: 46px;
   }
-}
-
-@media screen and (max-width: 728px) {
   .input-main .search-breedimage {
     width: 85%;
   }
   .select-opt {
-    width: 5%;
-    right: 30px;
+    width: 35px;
+    padding: 0 8px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -494,7 +499,7 @@ select {
 
 @media screen and (max-width: 599px) {
   .input-main .search-breedimage {
-    width: 80%;
+    width: 75%;
   }
   .input-main ::-webkit-input-placeholder {
     font-size: 1.6rem;
@@ -522,29 +527,40 @@ select {
 
 @media screen and (max-width: 515px) {
   .input-main .search-breedimage {
-    width: 75%;
+    width: 70%;
   }
   .select-opt:hover {
     width: 75%;
+  }
+  .img-box {
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 430px) {
-  .input-main .search-breedimage {
-    width: 70%;
+  .input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .select-opt:hover {
-    width: 80%;
+  .input-main {
+    top: 30px;
   }
-}
-
-@media screen and (max-width: 390px) {
   .input-main .search-breedimage {
-    width: 65%;
-    padding: 5px 15px;
+    width: 90%;
+  }
+  .select-opt {
+    left: 0px;
+    width: 90%;
   }
   .select-opt:hover {
     width: 90%;
+    font-size: 1.8rem;
+  }
+  .dropdown-icon {
+    top: 102px;
+    right: 5%;
   }
 }
 
@@ -712,16 +728,17 @@ section {
   font-size: 1.5rem;
 }
 
-::-moz-selection {
-  background: black;
-  color: white;
-  opacity: 0.9;
-}
-
-::selection {
-  background: black;
-  color: white;
-  opacity: 0.9;
+@media screen and (max-width: 500px) {
+  .cards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: -20px;
+  }
+  .card {
+    width: 85%;
+  }
 }
 
 .position {
@@ -932,6 +949,8 @@ footer {
     width: 26px;
     height: 4px;
     background: white;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
     cursor: pointer;
   }
   .hamburger::before {
@@ -949,6 +968,20 @@ footer {
     width: 26px;
     height: 4px;
     background: white;
+  }
+  .hamburger.toggle {
+    width: 26px;
+    height: 4px;
+    background: white;
+    -webkit-transform: rotate(45deg) translate(5px, 6px);
+            transform: rotate(45deg) translate(5px, 6px);
+  }
+  .hamburger.toggle::before {
+    opacity: 0;
+  }
+  .hamburger.toggle::after {
+    -webkit-transform: rotate(-90deg) translate(14px, 0px);
+            transform: rotate(-90deg) translate(14px, 0px);
   }
   .main-name h1 {
     margin-top: 20px;
